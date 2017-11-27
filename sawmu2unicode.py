@@ -93,7 +93,7 @@ def text2Unicode(text):
     }
 
     # Change numeric zero to alphabetic "wa" if followed by vowel, tone, etc.
-    text = re.sub(r'0([DHJh])', r'ဝ\1', text)
+    text = re.sub(r'0([S§V|âs@MBNjêûGaDdHJhYgUlLkKfOP;I:])', r'ဝ\1', text)
 
     # Reorder medial "ra" to follow it's consonant
     text = re.sub(r"([MBNjêû])([uc*CipqZnwx'eyz[r<&vobt{])", r'\2\1', text)
